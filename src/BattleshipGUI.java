@@ -21,7 +21,7 @@ public class BattleshipGUI extends Application implements Observer {
      * @param arg an argument passed to the <code>notifyObservers</code>
      */
     @Override
-    public void update(Observable o, Object arg) {
+    public void update(Observable o, Object arg) { // should check to see if game is over
 
     }
 
@@ -46,7 +46,7 @@ public class BattleshipGUI extends Application implements Observer {
     }
 
     @Override
-    public void init() throws Exception{
+    public void init() throws Exception{ // initializes varibles
 
     }
 
