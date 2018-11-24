@@ -15,13 +15,22 @@ public class Main {
       Player Player1 = new Player();
       Player Player2 = new Player();
 
+      ArrayList<Player> players = new ArrayList();
+      players.add(Player1);
+      players.add(Player2);
+
 
       //MAIN GAME LOOP
       while (!gameOver){
 
-        //Player1 TAKE TURN
+        Player1.takeTurn();
 
-        //PLayer2 TAKE TURN
+        checkGameOver(players);
+        if (gameOver){break;}
+
+        Player2.takeTurn();
+
+        checkGameOver(players);
 
       }
 
@@ -31,6 +40,8 @@ public class Main {
 
     public static void multiComputerMain(){
       Player Player1 = new Player();
+      ArrayList<Player> players = new ArrayList();
+      players.add(Player1);
       Scanner scanner1 = new Scanner(System.in);
 
       System.out.print("Please enter your port number: ");
@@ -42,10 +53,26 @@ public class Main {
 
       //MAIN GAME LOOP
       while (!gameOver){
+
         //WAIT FOR OTHER PLAYER
 
-        //TAKE TURN
+        //RECEIVE DATA FROM OTHER PLAYER
 
+        Player1.takeTurn();
+
+        checkGameOver(players);
+
+        //SEND DATA TO OTHER PLAYER
+
+      }
+    }
+
+    public int checkGameOver(ArrayList<Player> players){
+      for (int i = 0; i < players.size(); i++){
+        if (players.get(i).getShips_alive() == 0){
+          gameOver = true;
+          if (i == 0) {return 2} else {return 1}
+        }
       }
     }
 
