@@ -6,10 +6,12 @@ import java.util.ArrayList;
 public class Player {
     protected ArrayList<ArrayList<Square>> layout; //The grid representing player's own ships
     protected ArrayList<ArrayList<Square>> radar; //The grid representing opponents ships
+    private int ships_alive;
 
     public Player(){
       layout = createGrid();
       radar = createGrid();
+      ships_alive = 11;
     }
 
     /**
@@ -27,6 +29,9 @@ public class Player {
       return grid;
     }
 
+    public int getShips_alive(){
+        return ships_alive;
+    }
 
     public void takeTurn(){
       
