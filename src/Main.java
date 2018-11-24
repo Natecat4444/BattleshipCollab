@@ -43,7 +43,7 @@ public class Main {
     }
 
 
-    public static void multiComputerMain(){
+    public static void multiComputerMain(){ //needs its gui intiated
       Player Player1 = new Player();
       ArrayList<Player> players = new ArrayList();
       players.add(Player1);
