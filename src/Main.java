@@ -6,6 +6,52 @@ import java.util.Scanner;
 public class Main {
     public static boolean gameOver;
     private static Scanner scanner;
+    private static int localPort;
+    private static String foreignIP;
+    private static int foreignPort;
+
+
+    public static void singleComputerMain(){
+      Player Player1 = new Player();
+      Player Player2 = new Player();
+
+
+      //MAIN GAME LOOP
+      while (!gameOver){
+
+        //Player1 TAKE TURN
+
+        //PLayer2 TAKE TURN
+
+      }
+
+
+    }
+
+
+    public static void multiComputerMain(){
+      Player Player1 = new Player();
+
+      System.out.println("Please enter your port number: ");
+      localPort = scanner.nextInt();
+      System.out.println("Please enter IP address of other player: ");
+      foreignIP = scanner.nextLine();
+      System.out.println("Please enter port number of other player: ");
+      foreignPort = scanner.nextInt();
+
+      //MAIN GAME LOOP
+      while (!gameOver){
+        //WAIT FOR OTHER PLAYER
+
+        //TAKE TURN
+
+      }
+    }
+
+
+
+
+
 
     public static void main(String[] args) {
         scanner = new Scanner(System.in);
@@ -13,28 +59,17 @@ public class Main {
         System.out.print("Please enter one or two computers: ");
         int computers = scanner.nextInt();
         if(computers == 1){
-            //function call
+            singleComputerMain();
         }
         else if(computers == 2){
-            //function call
+            multiComputerMain();
         }
         else {
             System.out.println("Invalid input, get learnt");
             main(null);
         }
 
-        Player Player1 = new Player();
 
-
-        //Player Player2 = new Player();
-
-        //MAIN GAME LOOP
-        while (!gameOver){
-          //WAIT FOR OTHER PLAYER
-
-          //TAKE TURN
-          
-        }
         System.exit(1);
     }
 }
