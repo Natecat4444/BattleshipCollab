@@ -11,3 +11,9 @@ Destroyers: each destroyer grants 20% chance to block any shot in a 3 square rad
 
 Aircraft Carrier: hits a 4x4, opponent can trace planes (grid changes color), needs 3 turns to reload
 Battleship: hits a two by two, needs turn to reload
+
+Colors:
+Black: hit and destroyed
+Red: Hit
+Pink: Carrier in region
+Blue: Nothing
