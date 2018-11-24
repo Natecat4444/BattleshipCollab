@@ -33,6 +33,8 @@ public class Cruiser implements Ship {
 
     @Override
     public void reduceCooldown() {
-        cooldown = cooldown-1;
+        if(cooldown>0) {
+            cooldown = cooldown - 1;
+        }
     }
 }
