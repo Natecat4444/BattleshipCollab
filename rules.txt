@@ -1,0 +1,6 @@
+Grid size: 15x15
+Aircraft carriers: 5 Blocks 1 ship
+Battleships: 4 blocks 2 ships
+cruiser: 3 blocks 2 cruisers
+Submarine: 2 block 2 ships
+Stealth ship: 1 block 3 ships
