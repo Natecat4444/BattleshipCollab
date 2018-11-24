@@ -11,6 +11,11 @@ import java.util.Observer;
  * Created by nathankaufman on 7/1/18.
  */
 public class BattleshipGUI extends Application implements Observer {
+    private Player current_player;
+
+    public void setCurrent_player(Player player){
+        current_player = player;
+    }
     /**
      * This method is called whenever the observed object is changed. An
      * application calls an <tt>Observable</tt> object's
@@ -48,6 +53,15 @@ public class BattleshipGUI extends Application implements Observer {
     @Override
     public void init() throws Exception{ // initializes varibles
 
+    }
+
+    public static void startgui(){
+        Application.launch();
+    }
+
+    public void BattleshipGUI(Player player){
+        setCurrent_player(player);
+        startgui();
     }
 
 }

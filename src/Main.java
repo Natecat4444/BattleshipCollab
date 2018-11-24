@@ -9,12 +9,16 @@ public class Main {
     private static int localPort;
     private static String foreignIP;
     private static int foreignPort;
+    protected static BattleshipGUI battleshipGUI;
 
 
     public static void singleComputerMain(){
       Player Player1 = new Player();
       Player Player2 = new Player();
       int winner = 0;
+
+      Player1.setOpponent(Player2);
+      Player2.setOpponent(Player1);
 
       ArrayList<Player> players = new ArrayList();
       players.add(Player1);

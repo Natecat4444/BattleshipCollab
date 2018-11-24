@@ -7,11 +7,16 @@ public class Player {
     protected ArrayList<ArrayList<Square>> layout; //The grid representing player's own ships
     protected ArrayList<ArrayList<Square>> radar; //The grid representing opponents ships
     private int ships_alive;
+    protected Player opponent;
 
     public Player(){
       layout = createGrid();
       radar = createGrid();
       ships_alive = 11;
+    }
+
+    public void setOpponent(Player opponent){
+        this.opponent = opponent;
     }
 
     /**
@@ -34,7 +39,7 @@ public class Player {
     }
 
     public void takeTurn(){
-      
+        Main.battleshipGUI.setCurrent_player(this);
     }
 
 }
