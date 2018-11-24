@@ -62,9 +62,12 @@ public class Main {
 
         //WAIT FOR OTHER PLAYER
 
-        //RECEIVE DATA FROM OTHER PLAYER
+        Player opponent = new Player(); //RECEIVE DATA FROM OTHER PLAYER
 
+
+        Player1.setOpponent(opponent);
         Player1.takeTurn();
+
 
         winner = checkGameOver(players);
 
