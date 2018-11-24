@@ -1,6 +1,13 @@
-Grid size: 15x15
+Grid size: 25x25
 Aircraft carriers: 5 Blocks 1 ship
 Battleships: 4 blocks 2 ships
 cruiser: 3 blocks 2 cruisers
-Submarine: 2 block 2 ships
+Destroyers: 2 block 3 ships
 Stealth ship: 1 block 3 ships
+
+Ammunition per turn: one shot per ship
+
+Destroyers: each destroyer grants 20% chance to block any shot in a 3 square radius(including misses)
+
+Aircraft Carrier: hits a 4x4, opponent can trace planes (grid changes color), needs 3 turns to reload
+Battleship: hits a two by two, needs turn to reload
