@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.ArrayList;
 /**
  * Created by nathankaufman on 11/24/18.
  */
@@ -14,6 +14,7 @@ public class Main {
     public static void singleComputerMain(){
       Player Player1 = new Player();
       Player Player2 = new Player();
+      int winner = 0;
 
       ArrayList<Player> players = new ArrayList();
       players.add(Player1);
@@ -25,12 +26,12 @@ public class Main {
 
         Player1.takeTurn();
 
-        checkGameOver(players);
+        winner = checkGameOver(players);
         if (gameOver){break;}
 
         Player2.takeTurn();
 
-        checkGameOver(players);
+        winner = checkGameOver(players);
 
       }
 
@@ -43,6 +44,7 @@ public class Main {
       ArrayList<Player> players = new ArrayList();
       players.add(Player1);
       Scanner scanner1 = new Scanner(System.in);
+      int winner = 0;
 
       System.out.print("Please enter your port number: ");
       localPort = scanner.nextInt();
@@ -60,20 +62,21 @@ public class Main {
 
         Player1.takeTurn();
 
-        checkGameOver(players);
+        winner = checkGameOver(players);
 
         //SEND DATA TO OTHER PLAYER
 
       }
     }
 
-    public int checkGameOver(ArrayList<Player> players){
+    public static int checkGameOver(ArrayList<Player> players){
       for (int i = 0; i < players.size(); i++){
         if (players.get(i).getShips_alive() == 0){
           gameOver = true;
-          if (i == 0) {return 2} else {return 1}
+          if (i == 0) {return 2;} else {return 1;}
         }
       }
+      return 0;
     }
 
 
