@@ -2,8 +2,8 @@
  * Created by nathankaufman on 11/24/18.
  */
 public class Cruiser implements Ship {
-    int health;
-    int cooldown;
+    private int health;
+    private int cooldown;
 
     public Cruiser(){
         health = 3;
