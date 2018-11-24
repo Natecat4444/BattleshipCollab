@@ -5,9 +5,16 @@ cruiser: 3 blocks 2 cruisers
 Destroyers: 2 block 3 ships
 Stealth ship: 1 block 3 ships
 
-Ammunition per turn: one shot per ship
+Ammunition per turn: one shot per ship, max 4 shots per turn
 
-Destroyers: each destroyer grants 20% chance to block any shot in a 3 square radius(including misses)
-
+Destroyers: each destroyer grants 20% chance to block any shot in a 3 square radius(including misses). hits a 1x1 every turn
+Cruiser: 1x4: any direction, need two turns to reload
 Aircraft Carrier: hits a 4x4, opponent can trace planes (grid changes color), needs 3 turns to reload
 Battleship: hits a two by two, needs turn to reload
+Stealth ship: hits a 1x1 every other turn
+
+Colors:
+Black: hit and destroyed
+Red: Hit
+Pink: Carrier in region
+Blue: Nothing
