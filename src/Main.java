@@ -31,12 +31,13 @@ public class Main {
 
     public static void multiComputerMain(){
       Player Player1 = new Player();
+      Scanner scanner1 = new Scanner(System.in);
 
-      System.out.println("Please enter your port number: ");
+      System.out.print("Please enter your port number: ");
       localPort = scanner.nextInt();
-      System.out.println("Please enter IP address of other player: ");
-      foreignIP = scanner.nextLine();
-      System.out.println("Please enter port number of other player: ");
+      System.out.print("Please enter IP address of other player: ");
+      foreignIP = scanner1.nextLine();
+      System.out.print("Please enter port number of other player: ");
       foreignPort = scanner.nextInt();
 
       //MAIN GAME LOOP
