@@ -34,6 +34,8 @@ public class Battleship implements Ship {
 
     @Override
     public void reduceCooldown() {
-        coolDown = coolDown-1;
+        if(coolDown>0) {
+            coolDown = coolDown - 1;
+        }
     }
 }

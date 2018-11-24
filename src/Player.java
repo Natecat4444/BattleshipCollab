@@ -17,10 +17,10 @@ public class Player {
     */
     public ArrayList<ArrayList<Square>> createGrid(){
       ArrayList<ArrayList<Square>> grid = new ArrayList();
-      for (int i = 0; i < 25; i++;){
+      for (int i = 0; i < 25; i++){
         grid.add(new ArrayList<Square>());
-        for (int j = 0; j < 25; j++;){
-          grid.get(i).add(new Square);
+        for (int j = 0; j < 25; j++){
+          grid.get(i).add(new Square());
         }
       }
 
