@@ -27,4 +27,9 @@ public class Player {
       return grid;
     }
 
+
+    public void takeTurn(){
+      
+    }
+
 }
