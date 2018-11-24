@@ -8,6 +8,11 @@ public class Player {
     protected ArrayList<ArrayList<Square>> radar; //The grid representing opponents ships
     private int ships_alive;
     protected Player opponent;
+    protected int airstrikes; // carrier ammo
+    protected int battlebombardments; //battleship ammo
+    protected int machineguns; // destroyers ready to shoot
+    protected int missiles; // cruiser ready to shoot
+    protected int shells; //stealth ships ready to shoot
 
     public Player(){
       layout = createGrid();
@@ -40,6 +45,10 @@ public class Player {
 
     public void takeTurn(){
         Main.battleshipGUI.setCurrent_player(this);
+    }
+
+    public void get_ammunition(){
+
     }
 
 }
