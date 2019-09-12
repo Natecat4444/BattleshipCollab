@@ -23,6 +23,7 @@ public class Main {
       ArrayList<Player> players = new ArrayList();
       players.add(Player1);
       players.add(Player2);
+      gameOver = false;
 
 
       //MAIN GAME LOOP

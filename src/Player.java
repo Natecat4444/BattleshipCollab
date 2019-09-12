@@ -39,6 +39,11 @@ public class Player {
       return grid;
     }
 
+    //TODO
+    public void changeGrid(int x, int y, int value){
+        layout.get(x).get(y).setValue(value);
+    }
+
     public int getShips_alive(){
         return ships_alive;
     }
